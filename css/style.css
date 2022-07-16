@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Oleo+Script+Swash+Caps&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(128, 114, 114);
+    color:black;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("../img/bg.jpg") no-repeat center center/cover ;
+    height: 100vh;
+    overflow: hidden;
+    
+
+}
+.animation{
+    text-transform: uppercase;
+    font-family: 'Charm', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    background: url("../img/text.jpg") no-repeat;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip:text;
+    animation: moveBg 9s linear infinite;
+    -webkit-animation: moveBg 9s linear infinite;
+}
+
+@keyframes moveBg{
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
